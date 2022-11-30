@@ -3,7 +3,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <p>Lina Habazi Admin Portal</p>
+      <header className="App-header">
+        <p>
+          Lina Habazi Admin Portal
+        </p>
+      </header>
     </div>
   );
 }
