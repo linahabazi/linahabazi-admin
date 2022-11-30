@@ -1,15 +1,8 @@
-import './App.css';
+import { Admin } from "react-admin";
+import jsonServerProvider from "ra-data-json-server";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Lina Habazi Admin Portal
-        </p>
-      </header>
-    </div>
-  );
-}
+const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
+
+const App = () => <Admin dataProvider={dataProvider} />;
 
 export default App;
