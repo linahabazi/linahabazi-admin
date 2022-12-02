@@ -1,8 +1,8 @@
-import { Admin } from "react-admin";
-import jsonServerProvider from "ra-data-json-server";
+import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
+import Tutorial from './react-admin/tutorial';
 
-const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
-
-const App = () => <Admin dataProvider={dataProvider} />;
+const App = () => (
+  <Tutorial />
+);
 
 export default App;
